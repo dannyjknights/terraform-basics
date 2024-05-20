@@ -26,10 +26,10 @@ Hard coding variables is not a recommended approach to any programming language 
 
 When you are ready run the following commands in order:
 
-> `terraform fmt`
-> `terraform validate`
-> `terraform plan`
-> `terraform apply`
+* `terraform fmt`
+* `terraform validate`
+* `terraform plan`
+* `terraform apply`
 
 You should notice before you type `yes` to apply the changes that Terraform tells you of the change that will happen and you will see the name of the container change to your new name that you defined in the `variables.tf` file. If, after running the `terraform apply`, the CLI is asking you to input a value for the variables, you may have forgotten to add a default value.
 
@@ -72,10 +72,10 @@ resource "random_pet" "container_name_pet" {
 ```
 Now when we run our:
 
-> `terraform fmt`
-> `terraform validate`
-> `terraform plan`
-> `terraform apply`
+* `terraform fmt`
+* `terraform validate`
+* `terraform plan`
+* `terraform apply`
 
 We will see the name of the container be "barclays-" and some random pets names. The power of technology 😎
 
@@ -89,10 +89,10 @@ If you open the `.gitignore` file, around half way down you will see that it is 
 
 When you are ready run the following commands in order:
 
-> `terraform fmt`
-> `terraform validate`
-> `terraform plan`
-> `terraform apply`
+* `terraform fmt`
+* `terraform validate`
+* `terraform plan`
+* `terraform apply`
 
 You should notice before you type `yes` to apply the changes that Terraform tells you of the change that will happen and you will see the name of the container change to your new name that you defined in the `terraform.tfvars` file, and that it has overridden the value in the `variables.tf` file.
 
