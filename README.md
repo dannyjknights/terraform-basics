@@ -14,9 +14,9 @@ In the `docker.tf` file we have two resources, which will specify the docker ima
 
 When you are ready run the following commands in order:
 
-> `terraform init`
-> `terraform plan`
-> `terraform apply`
+* `terraform init`
+* `terraform plan`
+* `terraform apply`
 
 The container will be created and start running 💪
 
