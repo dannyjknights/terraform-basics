@@ -39,7 +39,7 @@ You should notice before you type `yes` to apply the changes that Terraform tell
 
 Sometimes with our variable names, we need to ensure they are unique. Of course it's arguably pretty simple to think of a unique name, but you never know if it will clash with a name someone else has given to a resource. Terraform has a `random` provider (https://registry.terraform.io/providers/hashicorp/random/latest) and 8 resources available. Personally I like the `random_pet` name 🙂 resource.
 
-1. To use this provider, the code to add to your `main.tf` file is shown on the registry website, like the below screenshot shows:
+1. To use this provider, the code to add to your `main.tf` file is shown on the registry website when you click 'Use Provider', like the below screenshot shows:
 
 ![Random Provider](img/random_provider.png)
 
