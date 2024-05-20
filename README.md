@@ -104,7 +104,7 @@ You should notice before you type `yes` to apply the changes that Terraform tell
 
 ### Step 5: Introduce an outputs.tf file
 
-After we successfully run a `terraform apply` we may want to obtain some ouput information from our deployment. A very basic example is outputting same a Public IP address of a newly created resource, URL, or FQDN name of resources have been created. Our example is basic, but lets see what outputs look like.
+After we successfully run a `terraform apply` we may want to obtain some ouput information from our deployment. A very basic example is outputting a Public IP address of a newly created resource, URL, or FQDN name of resources have been created. Our example is basic, but lets see what outputs look like.
 
 1. Create a new file called `outputs.tf` 
 
