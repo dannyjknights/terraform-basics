@@ -102,5 +102,24 @@ When we're running Terraform locally and we're using a `variables.tf` file and c
 
 You should notice before you type `yes` to apply the changes that Terraform tells you of the change that will happen and you will see the name of the container change to your new name that you defined in the `terraform.tfvars` file, and that it has overridden the value in the `variables.tf` file.
 
+### Step 5: Introduce an outputs.tf file
+
+After we successfully run a `terraform apply` we may want to obtain some ouput information from our deployment. A very basic example is outputting same a Public IP address of a newly created resource, URL, or FQDN name we resources have been created. Our example is basic, but lets see what outputs look like.
+
+1. Create a new file called `outputs.tf` 
+
+2. Create an `output` block and assign it a value for one of the resources. You can play around here. If you need some help in creating the `output` block, please take a look here: https://developer.hashicorp.com/terraform/language/values/outputs. You could see what the ouput gives you when you have the value as `docker_image.nginx.id` as a place to start.
+
+3. When you are ready run the following commands in order:
+
+* `terraform fmt`
+* `terraform validate`
+* `terraform plan`
+* `terraform apply`
+
+Notice the output at the bottom when Terraform completes its apply!
+
+4. Try and play with different values for the `docker_image` and `docker_container` resources 😀
+
 
 
