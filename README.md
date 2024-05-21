@@ -87,13 +87,15 @@ We will see the name of the container be "barclays-" and some random pets names.
 
 When we're running Terraform locally and we're using a `variables.tf` file and committing to a repo, we may have sensitive values in that file we don't want to go into a repo. Thankfully in this example we're ok, but let's see how you can use the `terraform.tfvars` file.
 
-1. If you open the `.gitignore` file, around half way down you will see that it is excluding `*.tfvars` and `*.tfcars.json` from being uploaded to the repo. 
+1. If you open the `.gitignore` file, around half way down you will see that it is excluding `*.tfvars` and `*.tfvars.json` from being uploaded to the repo. 
 
 2. Create a new file called `terraform.tfvars` and add the variable name from your `variables.tf` file and give it a new value. You do not need to use a `variable` block, just take the same name and give it a value, e.g.:
 
 `container_name = new-container-name`
 
-3. When you are ready run the following commands in order:
+3. Go back into your `docker.tf` file and change the name of the docker container to reference the variable again using the `var.VARIABLE-NAME` like we did in Step 2.
+
+4. When you are ready run the following commands in order:
 
 * `terraform fmt`
 * `terraform validate`
